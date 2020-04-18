@@ -30,11 +30,3 @@ myPlayer.init();
 ```
 
 In the above example, FMPlayer is created, instantiated and attached to an element in HTML.
-
-# Major concepts used
-
-1. Modular design pattern.
-2. Event Delegation.
-3. Throttling.
-4. Asynchronus programming using async/await and fetch.
-5. Reponsive website using flexbox and media query.
