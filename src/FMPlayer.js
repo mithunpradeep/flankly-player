@@ -44,7 +44,7 @@ var FMPlayer = {};
         '<div id="player"></div>' +
         '<div id="playlist"></div>' +
         "</div>";
-      return FMPlayer.toHTML(template);
+      return toHTML(template);
     }
 
     function createPlayer(toPlay) {
@@ -70,7 +70,7 @@ var FMPlayer = {};
         "</h3>" +
         "</div>";
       highLight(toPlay.platform_id);
-      return FMPlayer.toHTML(template);
+      return toHTML(template);
     }
 
     function createPlaylistContainer(playlist) {
@@ -96,7 +96,7 @@ var FMPlayer = {};
           "</div>";
       }
       template += "</div>";
-      return FMPlayer.toHTML(template);
+      return toHTML(template);
     }
 
     function highLight(id) {
@@ -156,13 +156,13 @@ var FMPlayer = {};
       highLight(playlist[index].platform_id);
       loadVideo(playlist[index].platform_id);
     }
-  }
 
-  FMPlayer.toHTML = function(template) {
-    var templateHolder = document.createElement("div");
-    templateHolder.innerHTML = template;
-    return templateHolder.firstChild;
-  };
+    function toHTML(template) {
+      var templateHolder = document.createElement("div");
+      templateHolder.innerHTML = template;
+      return templateHolder.firstChild;
+    }
+  }
   FMPlayer.player = player;
 })(FMPlayer);
 
