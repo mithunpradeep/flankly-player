@@ -30,3 +30,5 @@ myPlayer.init();
 ```
 
 In the above example, FMPlayer is created, instantiated and attached to an element in HTML.
+
+Sample implementation at https://codesandbox.io/s/frankly-player-5typ5?file=/README.md
