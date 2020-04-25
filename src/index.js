@@ -1,3 +1,6 @@
+import "core-js/stable";
+import "regenerator-runtime/runtime";
+
 import FMPlayer from "./FMPlayer";
 
 (function(FMPlayer) {

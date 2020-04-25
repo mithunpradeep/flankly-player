@@ -4,10 +4,13 @@
   "description": "HTML5 video player",
   "main": "index.html",
   "scripts": {
-    "start": "parcel index.html --open",
+    "start": "npm install && parcel index.html --open",
     "build": "parcel build index.html"
   },
-  "dependencies": {},
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "regenerator-runtime": "^0.13.5"
+  },
   "devDependencies": {
     "@babel/core": "7.2.0",
     "parcel-bundler": "^1.6.1"
